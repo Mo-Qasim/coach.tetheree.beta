@@ -6,13 +6,13 @@ const Index = ({ }) => {
         <>
             <section>
                 <div className="container mx-auto px-20 md:px-24 lg:px-32">
-                    <section className='w-full relative z-10 lg:max-w-[600px] mx-auto mt-99 -mb-162'>
+                    <section className='w-full relative z-10 lg:max-w-[600px] mx-auto mt-99 lg:-mb-162'>
                         <div>
                             <H2 className='text-center mb-6'>Get Started</H2>
                             <H6 className='w-full lg:w-11/12 font-normal text-center mb-32'>Save time and achieve greater results on behalf of you and your athletes</H6>
-                            <main className='bg-[#FAFAFA] flex flex-col rounded-lg p-46'>
+                            <main className='bg-[#FAFAFA] flex flex-col lg:rounded-lg p-26 lg:p-46'>
                                 <Caption className='text-[#343434] mb-28'>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</Caption>
-                                <div className='flex justify-between gap-14'>
+                                <div className='flex flex-col lg:flex-row justify-between lg:gap-14'>
                                     <div className='w-full mb-18'>
                                         <Input label='First name' placeholder='first name' forId='fistname' />
                                     </div>
@@ -29,7 +29,7 @@ const Index = ({ }) => {
                                     <Input label='Work email' placeholder='Your email address' forId='email' />
                                 </div>
 
-                                <div className='flex justify-between gap-14'>
+                                <div className='flex flex-col lg:flex-row justify-between lg:gap-14'>
                                     <div className='w-full mb-18'>
                                         <Input label='Password' placeholder='***********' forId='password' type='password' />
                                     </div>
@@ -37,20 +37,26 @@ const Index = ({ }) => {
                                         <Input label='Confirm password' placeholder='***********' forId='confirm_password' type='password' />
                                     </div>
                                 </div>
-                                <Button className='self-center mt-12'>Register Now</Button>
+                                <Button className='self-end !text-16 lg::self-center !rounded lg:!rounded-full mt-12'>Register Now</Button>
                             </main>
                         </div>
                     </section>
                 </div>
-                <div className='w-full bg-black'>
-                    <img className='w-full object-cover opacity-60' src='/assets/lg-register.png' alt="" />
+
+                <div className=' hidden lg:block w-full bg-black'>
+                    <img className='w-full object-cover opacity-50' src='/assets/lg-register.png' alt="" />
                 </div>
+
+                <div className='block lg:hidden container mx-auto px-20 md:px-24 lg:px-32 mb-136'>
+                    <img className='w-full object-cover opacity-60' src='/assets/sm-register.png' alt="" />
+                </div>
+
             </section>
             <footer className='bg-primary'>
                 <div className="container mx-auto px-20 md:px-24 lg:px-32">
                     <div className='pt-64 px-20'>
-                        <section className=' w-full grid grid-cols-4 gap-10 mb-76'>
-                            <div>
+                        <section className=' w-full grid grid-cols-2 lg:grid-cols-4 gap-10'>
+                            <div className='col-span-2 lg:col-span-1 mb-60 lg:mb-76'>
                                 <img className='mb-14' src="/assets/svg/logo-footer.svg" alt="" />
                                 <Paragraph className='w-full lg:w-3/4 text-white mb-20'>2238 Partha Nethan Street, Coimbatore - 638186 Tamil Nadu, India.</Paragraph>
                                 <div className='flex items-baseline gap-28'>
@@ -73,9 +79,9 @@ const Index = ({ }) => {
 
                                 </div>
                             </div>
-                            <div className='mx-auto'>
+                            <div className='col-span-1 lg:mx-auto mb-60 lg:mb-76'>
                                 <div className='inline-block'>
-                                    <H6 className='text-white font-semibold mb-24'>Useful Links</H6>
+                                    <H6 className='text-white font-semibold mb-18 lg:mb-24'>Useful Links</H6>
                                     <ul>
                                         {['Payment & Tax', 'Terms of Service', 'Your Account', 'Privacy Policy']?.map((item, _index) => (
                                             <li key={_index} className='text-xs text-white font-normal transition-all cursor-pointer hover:underline hover:opacity-90 mb-12'>{item}</li>
@@ -83,9 +89,9 @@ const Index = ({ }) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className='mx-auto'>
+                            <div className='col-span-1 lg:mx-auto mb-60 lg:mb-76'>
                                 <div className='inline-block'>
-                                    <H6 className='text-white font-semibold mb-24'>Our Company</H6>
+                                    <H6 className='text-white font-semibold mb-18 lg:mb-24'>Our Company</H6>
                                     <ul>
                                         {['About us', 'Media', 'Blog', 'Contact us']?.map((item, _index) => (
                                             <li key={_index} className='text-xs text-white font-normal transition-all cursor-pointer hover:underline hover:opacity-90 mb-12'>{item}</li>
@@ -93,9 +99,9 @@ const Index = ({ }) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className='ml-auto'>
-                                <div className='inline-block'>
-                                    <H6 className='text-white font-semibold mb-24'>Subscribe to our Newsletter</H6>
+                            <div className='col-span-2 lg:col-span-1 lg:ml-auto mb-44 lg:mb-76'>
+                                <div className='block'>
+                                    <H6 className='text-white font-semibold mb-18 lg:mb-24'>Subscribe to our Newsletter</H6>
                                     <div className='relative w-full h-60 mb-14'>
                                         <input className='w-full h-full focus:outline-none rounded-lg px-20' type="email" placeholder='Email Address' />
                                         <svg className='absolute top-2/4 -translate-y-2/4 right-20' width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -118,7 +124,7 @@ const Index = ({ }) => {
                                 </div>
                             </div>
                         </section>
-                        <H6 className='text-white font-normal text-center pb-46'>© 2023 Coach.</H6>
+                        <H6 className='text-white font-normal text-center pb-26 lg:pb-46'>© 2023 Coach.</H6>
                     </div>
                 </div>
             </footer>
@@ -130,7 +136,15 @@ const Input = ({ label, placeholder, forId, type }) => {
     return (
         <>
             <label className='block text-12 text-[#222222] font-normal mb-12' for={forId}>{label}</label>
-            <input className='w-full h-46 focus:outline-none text-2xs placeholder:text-2xs rounded px-16' type={type ? type : 'text'} id={forId} placeholder={placeholder} />
+            <div className='relative w-full h-46 rounded overflow-hidden'>
+                <input className={`w-full h-full focus:outline-none text-2xs placeholder:text-2xs ${label === 'Phone number' ? 'pl-64 pr-16' : 'px-16'}`} type={type ? type : 'text'} id={forId} placeholder={placeholder} />
+                {label === 'Phone number' && (<div className='absolute left-0 top-0 flex items-center justify-center gap-6 h-full w-60'>
+                    <span className='relative top-2 text-2xs text-gray opacity-80'>+00</span>
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.2" d="M8 0L3.97 6L0 0H8Z" fill="black" />
+                    </svg>
+                </div>)}
+            </div>
         </>
     )
 }

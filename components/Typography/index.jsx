@@ -1,6 +1,6 @@
 export const H1 = ({ className, children, ...props }) => {
     return (
-        <h1 {...props} className={`${className} text-[#031F4F] font-bold text-2xl leading-80`}>
+        <h1 {...props} className={`${className} text-[#031F4F] font-bold text-xl md:text-2xl leading-60 md:leading-80`}>
             {children}
         </h1>
     )
@@ -8,7 +8,7 @@ export const H1 = ({ className, children, ...props }) => {
 
 export const H2 = ({ className, children, ...props }) => {
     return (
-        <h2 {...props} className={`${className} text-xl font-semibold leading-60`}>
+        <h2 {...props} className={`${className} text-lg md:text-xl font-semibold leading-55 md:leading-60`}>
             {children}
         </h2>
     )
@@ -16,7 +16,7 @@ export const H2 = ({ className, children, ...props }) => {
 
 export const H3 = ({ className, children, ...props }) => {
     return (
-        <h3 {...props} className={`${className} text-secondary leading-55 text-lg`}>
+        <h3 {...props} className={`${className} text-secondary leading-34 md:leading-55 text-25 md:lg:text-lg`}>
             {children}
         </h3>
     )
@@ -24,7 +24,7 @@ export const H3 = ({ className, children, ...props }) => {
 
 export const H4 = ({ className, children, ...props }) => {
     return (
-        <h4 {...props} className={`${className} font-normal text-24 text-[#6D6D6D] leading-40`}>
+        <h4 {...props} className={`${className} font-normal text-sm md:first-letter:text-24 text-[#6D6D6D] leading-40`}>
             {children}
         </h4>
     )
@@ -64,7 +64,7 @@ export const Caption = ({ className, children, ...props }) => {
 
 export const Button = ({ className, children, ...props }) => {
     return (
-        <button {...props} className={`${className} bg-primary text-white h-50 whitespace-nowrap text-xs rounded-full px-36`}>
+        <button {...props} className={`${className} bg-primary text-white h-50 transition-all whitespace-nowrap text-xs rounded-full px-36`}>
             {children}
         </button>
     )

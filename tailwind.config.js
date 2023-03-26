@@ -30,6 +30,8 @@ module.exports = {
         80: '80px',
       },
       spacing: {
+        1: '1px',
+        2: '2px',
         3: '3px',
         4: '4px',
         6: '6px',
@@ -49,10 +51,12 @@ module.exports = {
         36: '36px',
         40: '40px',
         42: '42px',
+        44: '44px',
         46: '46px',
         48: '48px',
         50: '50px',
         52: '52px',
+        54: '54px',
         55: '55px',
         60: '60px',
         64: '64px',
@@ -60,6 +64,7 @@ module.exports = {
         70: '70px',
         72: '72px',
         76: '76px',
+        84: '84px',
         99: '99px',
         120: '120px',
         136: '136px',
@@ -69,7 +74,10 @@ module.exports = {
       fontSize: {
         12: '12px',
         13: '13px',
+        24: '24px',
         25: '25px',
+        26: '26px',
+        30: '30px',
         '2xl': '60px',
         'xl': '50px',
         'lg': '40px',
@@ -80,6 +88,7 @@ module.exports = {
       },
       boxShadow: {
         'card': '0px 4px 64px rgba(0, 0, 0, 0.25)',
+        'light': '0px 10px 50px rgba(1, 13, 130, 0.12)',
       }
     },
   },
