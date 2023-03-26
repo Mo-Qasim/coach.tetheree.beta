@@ -64,7 +64,7 @@ export const Caption = ({ className, children, ...props }) => {
 
 export const Button = ({ className, children, ...props }) => {
     return (
-        <button {...props} className={`${className} bg-primary text-white h-50 transition-all whitespace-nowrap text-xs rounded-full px-36`}>
+        <button {...props} className={`${className} bg-primary hover:bg-black text-white h-50 transition-all whitespace-nowrap text-xs rounded-full px-36`}>
             {children}
         </button>
     )

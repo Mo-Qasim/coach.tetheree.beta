@@ -13,14 +13,14 @@ const Index = () => {
                     </ul>
                     <div className="flex items-center">
                         <span className='hidden lg:block text-sm text-black font-normal transition-all cursor-pointer hover:underline hover:opacity-90'>Sign in</span>
-                        <Button className='!h-40 !text-14 md:!text-16 ml-16 mr-6 px-26 md:px-36'>Register Now</Button>
+                        <span className='inline-block xs:hidden text-sm text-black font-medium transition-all cursor-pointer hover:underline hover:opacity-90 mr-6'>Register Now</span>
+                        <Button className='hidden xs:block !h-40 !text-14 md:!text-16 ml-16 mr-6 px-26 md:px-36'>Register Now</Button>
                         <div className="bg-primary grid lg:hidden place-content-center w-40 h-40 rounded-full cursor-pointer">
                             <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="18" height="2" rx="1" fill="white" />
                                 <rect y="4" width="18" height="2" rx="1" fill="white" />
                                 <rect y="8" width="18" height="2" rx="1" fill="white" />
                             </svg>
-
                         </div>
                     </div>
                 </div>

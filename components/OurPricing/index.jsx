@@ -56,7 +56,7 @@ const Card = ({ item, active }) => {
                         </>
                     )}
                 </ul>
-                <Button className={`${!active && '!bg-[#000]'} !h-54 !text-md self-center mt-12`}>Book Now</Button>
+                <Button className={`${!active && '!bg-[#000] hover:!bg-primary'} !h-54 !text-md self-center mt-12`}>Book Now</Button>
             </div>
         </>
     )
