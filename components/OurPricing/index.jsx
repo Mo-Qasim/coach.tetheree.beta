@@ -7,13 +7,13 @@ const Index = ({ }) => {
         <>
             <section className=''>
                 <main className='bg-theme pt-99 pb-120'>
-                    <div className="container max-w-[1200px] mx-auto">
+                    <div className="container mx-auto px-20 md:px-24 lg:px-32">
                         <H2 className='text-center leading-55 mb-6'>Our pricing</H2>
                         <H6 className='w-full lg:w-11/12 lg:max-w-[600px] font-normal text-center mx-auto mb-42'>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</H6>
 
                         <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start gap-28'>
                             {list?.map((item, _index) => (
-                                <Card item={item} active={_index === 2} />
+                                <Card key={_index} item={item} active={_index === 2} />
                             ))}
                         </section>
                     </div>

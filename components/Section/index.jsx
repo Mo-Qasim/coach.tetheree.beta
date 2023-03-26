@@ -4,7 +4,7 @@ export const MultiSection = ({ title, subTitle, btnTitle, list = ['Communicate w
 
     return (
         <>
-            <div className="container max-w-[1200px] mx-auto">
+            <div className="container mx-auto px-20 md:px-24 lg:px-32">
                 <section className={`${containerClassName} w-full h-full flex justify-between gap-36 rounded-3xl py-76 px-20`}>
                     <div className={`${orderReverse && 'order-2'} w-full h-full`}>
                         <H3 className='font-semibold w-full lg:w-11/12 mt-14 mb-16'>{title}</H3>
@@ -19,8 +19,8 @@ export const MultiSection = ({ title, subTitle, btnTitle, list = ['Communicate w
                         </ul>
                     </div>
                     <div className={`${orderReverse && 'order-1'} relative w-full h-full`}>
+                        <img className={`absolute -scale-75 bottom-0 ${orderReverse ? '-left-76' : '-right-76'}`} src='/assets/svg/graphic-dots.svg' alt="" />
                         <img className='relative z-10 w-full max-w-full' src='/assets/video-assessment.png' alt="" />
-                        <img className={`absolute bottom-0 ${orderReverse ? '-left-68' : '-right-68'}`} src='/assets/svg/graphic-dots.svg' alt="" />
                     </div>
                 </section>
             </div>

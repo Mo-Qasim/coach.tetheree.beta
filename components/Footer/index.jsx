@@ -5,7 +5,7 @@ const Index = ({ }) => {
     return (
         <>
             <section>
-                <div className="container max-w-[1200px] mx-auto">
+                <div className="container mx-auto px-20 md:px-24 lg:px-32">
                     <section className='w-full relative z-10 lg:max-w-[600px] mx-auto mt-99 -mb-162'>
                         <div>
                             <H2 className='text-center mb-6'>Get Started</H2>
@@ -47,7 +47,7 @@ const Index = ({ }) => {
                 </div>
             </section>
             <footer className='bg-primary'>
-                <div className="container max-w-[1200px] mx-auto">
+                <div className="container mx-auto px-20 md:px-24 lg:px-32">
                     <div className='pt-64 px-20'>
                         <section className=' w-full grid grid-cols-4 gap-10 mb-76'>
                             <div>

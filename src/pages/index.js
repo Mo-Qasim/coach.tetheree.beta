@@ -1,5 +1,4 @@
 import Showcase from '../../components/Showcase'
-import Navbar from '../../components/Navbar'
 import OurPricing from '../../components/OurPricing'
 import Footer from '../../components/Footer'
 import { MultiSection, SingleSection } from '../../components/Section'
@@ -8,10 +7,7 @@ const Index = () => {
   return (
     <>
 
-      <header className="bg-[#E7F4FB] relative pt-26">
-        <Navbar />
-        <Showcase />
-      </header>
+      <Showcase />
 
       <SingleSection
         title='Efficient and Performant'
@@ -29,7 +25,7 @@ const Index = () => {
         orderReverse={true}
         containerClassName='bg-theme px-36'
         title='#tags on the video timeline are valuable'
-        subTitle='Allow your athletes to see themselves in action while receiving meaningful, directional feedback '
+        subTitle='Allow your athletes to see themselves in action while receiving meaningful, directional feedback'
         imgUrl='/assets/tags-on-video.png'
       />
 

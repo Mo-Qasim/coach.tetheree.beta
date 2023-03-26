@@ -2,7 +2,7 @@ import { Button } from "../Typography";
 
 const Index = () => {
     return (
-        <div className="container max-w-[1200px] mx-auto">
+        <div className="container mx-auto px-20 md:px-24 lg:px-32">
             <nav className="flex items-center justify-between">
                 <img src="/assets/svg/logo-nav.svg" alt="" />
                 <ul className="flex items-center gap-30">
