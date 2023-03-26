@@ -28,7 +28,7 @@ const Card = ({ item, active }) => {
 
     return (
         <>
-            <div className={`${active && 'shadow-card'} relative w-full bg-white flex flex-col rounded-lg overflow-hidden transition-all px-36 pt-26 md:pt-40 pb-40 md:pb-52`}>
+            <div className={`${active && ''} relative w-full bg-white flex flex-col rounded-lg overflow-hidden transition-all hover:shadow-card px-36 pt-26 md:pt-40 pb-40 md:pb-52`}>
                 {active && (<div className='bg-[#052F74] absolute top-0 right-0 text-white' style={{ writingMode: 'vertical-lr' }}><Paragraph className='font-medium leading-34 py-16'>Most Popular</Paragraph></div>)}
                 <h3 className='text-black font-medium text-25 text-center lg:text-left leading-42 mb-8'>{item?.type}</h3>
                 <div className='w-full flex items-center justify-center lg:justify-start gap-13 mb-18'>

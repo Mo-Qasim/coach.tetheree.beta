@@ -5,7 +5,7 @@ const Index = () => {
         <nav className="bg-white lg:bg-transparent py-20 lg:py-28">
             <div className="container mx-auto px-20 md:px-24 lg:px-32">
                 <div className="flex items-center justify-between">
-                    <img className='scale-75 md:scale-100' src="/assets/svg/logo-nav.svg" alt="" />
+                    <img className='h-34 md:h-60' src="/assets/svg/logo-nav.svg" alt="" />
                     <ul className="hidden lg:flex items-center gap-30">
                         {['Product', 'Use Case', 'Workflow', 'Pricing']?.map((item, _index) => (
                             <li key={_index} className='text-sm text-black font-normal transition-all cursor-pointer hover:underline hover:opacity-90'>{item}</li>

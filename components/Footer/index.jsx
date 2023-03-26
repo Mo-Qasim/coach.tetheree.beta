@@ -10,7 +10,9 @@ const Index = ({ }) => {
                         <div>
                             <H2 className='text-center mb-6'>Get Started</H2>
                             <H6 className='w-full lg:w-11/12 font-normal text-center mb-32'>Save time and achieve greater results on behalf of you and your athletes</H6>
-                            <main className='bg-[#FAFAFA] flex flex-col lg:rounded-lg p-26 lg:p-46'>
+                            <main className='bg-[#FAFAFA] relative z-10 flex flex-col lg:rounded-lg p-26 lg:p-46'>
+                                {/* <img className='hidden md:block absolute -scale-75 -top-18 -right-76' src='/assets/svg/graphic-dots.svg' alt="" /> */}
+                                {/* <img className='hidden md:block absolute -scale-75 translate-y-2/4 bottom-99 lg:bottom-162 -left-76 -z-10' src='/assets/svg/graphic-dots.svg' alt="" /> */}
                                 <Caption className='text-[#343434] mb-28'>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</Caption>
                                 <div className='flex flex-col lg:flex-row justify-between lg:gap-14'>
                                     <div className='w-full mb-18'>
@@ -54,7 +56,7 @@ const Index = ({ }) => {
             </section>
             <footer className='bg-primary'>
                 <div className="container mx-auto px-20 md:px-24 lg:px-32">
-                    <div className='pt-64 px-20'>
+                    <div className='pt-64'>
                         <section className=' w-full grid grid-cols-2 lg:grid-cols-4 gap-10'>
                             <div className='col-span-2 lg:col-span-1 mb-60 lg:mb-76'>
                                 <img className='mb-14' src="/assets/svg/logo-footer.svg" alt="" />
@@ -103,7 +105,7 @@ const Index = ({ }) => {
                                 <div className='block'>
                                     <H6 className='text-white font-semibold mb-18 lg:mb-24'>Subscribe to our Newsletter</H6>
                                     <div className='relative w-full h-60 mb-14'>
-                                        <input className='w-full h-full focus:outline-none rounded-lg px-20' type="email" placeholder='Email Address' />
+                                        <input className='w-full lg:w-full h-full focus:outline-none rounded-lg px-20' type="email" placeholder='Email Address' />
                                         <svg className='absolute top-2/4 -translate-y-2/4 right-20' width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_1_549)">
                                                 <path d="M31.1127 16.9706H15.5564" stroke="#161313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
