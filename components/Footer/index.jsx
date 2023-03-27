@@ -136,6 +136,7 @@ const Index = ({ }) => {
 }
 
 const Input = ({ label, placeholder, forId, type }) => {
+    const [code, setCode] = useState(null)
     const [toggle, setToggle] = useState(false)
 
     return (
@@ -146,7 +147,7 @@ const Input = ({ label, placeholder, forId, type }) => {
                 {label === 'Phone number' && (
                     <>
                         <div onClick={() => setToggle(!toggle)} className='absolute w-80 left-0 top-0 flex items-center justify-center gap-6 h-full rounded-tl rounded-bl cursor-pointer pb-2'>
-                            <span className='relative top-2 text-2xs text-gray opacity-80'>+00</span>
+                            <span className='relative top-2 text-2xs text-gray opacity-80'>+{code ? code : '00'}</span>
                             <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.2" d="M8 0L3.97 6L0 0H8Z" fill="black" />
                             </svg>
@@ -154,8 +155,11 @@ const Input = ({ label, placeholder, forId, type }) => {
                         {toggle && (
                             <div className='absolute bg-white top-46 w-80 shadow-sm rounded-bl rounded-br z-50 pb-6'>
                                 <ul>
-                                    {[353, 354, 354, 355]?.map((item, _index) => (
-                                        <li key={_index} onClick={() => setToggle(false)} className='text-12 text-gray font-medium text-center transition-all cursor-pointer hover:bg-[#FBFBFB] hover:opacity-90 first:border-t border-b border-[#F8F8F8] py-6 px-4'>+{item}</li>
+                                    {[{ id: 1, code: 353 }, { id: 2, code: 354 }, { id: 3, code: 355 }]?.map(({ code }, _index) => (
+                                        <li key={_index} onClick={() => { setCode(code); setToggle(false) }} className='flex items-center justify-center gap-6 transition-all cursor-pointer hover:bg-[#FBFBFB] hover:opacity-90 first:border-t border-b border-[#F8F8F8] py-6 px-4'>
+                                            <img className='w-20 object-cover' src={`/assets/countries/${code}.svg.webp`} alt="" />
+                                            <span className='text-12 text-gray font-medium'>{`+${code}`}</span>
+                                        </li>
                                     ))}
                                 </ul>
                             </div>
