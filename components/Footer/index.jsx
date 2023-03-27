@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { H2, H6, Button, Paragraph, Caption } from '../Typography'
 
 const Index = ({ }) => {
@@ -135,20 +136,32 @@ const Index = ({ }) => {
 }
 
 const Input = ({ label, placeholder, forId, type }) => {
+    const [toggle, setToggle] = useState(false)
+
     return (
         <>
             <label className='block text-12 text-[#222222] font-normal mb-12' for={forId}>{label}</label>
-            <div className='relative w-full h-46 rounded overflow-hidden'>
-                <input className={`w-full h-full focus:outline-none text-2xs placeholder:text-2xs ${label === 'Phone number' ? 'pl-64 pr-16' : 'px-16'}`} type={type ? type : 'text'} id={forId} placeholder={placeholder} />
-                {label === 'Phone number' && (<div className='absolute left-0 top-0 flex items-center justify-center gap-6 h-full pb-2 w-60'>
-                    <span className='relative top-2 text-2xs text-gray opacity-80'>+00</span>
-                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.2" d="M8 0L3.97 6L0 0H8Z" fill="black" />
-                    </svg>
-                </div>)}
-                {/* <div className='absolute w-60 h-40 bg-black z-50'>
-
-                </div> */}
+            <div className='relative w-full h-46'>
+                <input className={`w-full h-full focus:outline-none text-2xs rounded placeholder:text-2xs ${label === 'Phone number' ? 'pl-84 pr-16' : 'px-16'}`} type={type ? type : 'text'} id={forId} placeholder={placeholder} />
+                {label === 'Phone number' && (
+                    <>
+                        <div onClick={() => setToggle(!toggle)} className='absolute w-80 left-0 top-0 flex items-center justify-center gap-6 h-full rounded-tl rounded-bl cursor-pointer pb-2'>
+                            <span className='relative top-2 text-2xs text-gray opacity-80'>+00</span>
+                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.2" d="M8 0L3.97 6L0 0H8Z" fill="black" />
+                            </svg>
+                        </div>
+                        {toggle && (
+                            <div className='absolute bg-white top-46 w-80 shadow-sm rounded-bl rounded-br z-50 pb-6'>
+                                <ul>
+                                    {[353, 354, 354, 355]?.map((item, _index) => (
+                                        <li key={_index} onClick={() => setToggle(false)} className='text-12 text-gray font-medium text-center transition-all cursor-pointer hover:bg-[#FBFBFB] hover:opacity-90 first:border-t border-b border-[#F8F8F8] py-6 px-4'>+{item}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
+                    </>
+                )}
             </div>
         </>
     )
