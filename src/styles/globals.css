@@ -15,8 +15,16 @@ input{
 }
 
 input:focus{
-    border-color: rgb(5, 47, 116);
-    box-shadow: rgba(186, 177, 255, 0.3) 0px 0px 0px 2pt;
+    outline: none;
+    border: 1px solid #d4d4d4;
+}
+
+.bg-theme h3,
+.bg-theme h6,
+.bg-theme svg,
+.bg-theme li span{
+    color: #FFF !important;
+    stroke: #FFF !important;
 }
 
 /* sidebar */
@@ -34,7 +42,6 @@ input:focus{
     height: calc(100vh - 80px);
     padding: 2px 20px 20px 20px;
     background: rgb(255, 255, 255);
-    border: 1px solid rgb(229, 232, 235);
     filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
     transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
     visibility: visible;
@@ -52,7 +59,6 @@ input:focus{
     height: calc(100vh - 80px);
     padding: 2px 20px 20px 20px;
     background: rgb(255, 255, 255);
-    border: 1px solid rgb(229, 232, 235);
     filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
     transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
     visibility: visible;

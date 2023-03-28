@@ -10,6 +10,7 @@ const Index = () => {
       <Showcase />
 
       <SingleSection
+        titleClassName='!text-[#0E6747]'
         title='Efficient and Performant'
         subTitle='Athletes are expected to be efficient with their body movements, while coaches should be efficient with their coaching tools and techniques'
         btnTitle='Start your free trial'

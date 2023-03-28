@@ -60,7 +60,7 @@ const Index = ({ }) => {
                 </div>
 
             </section>
-            <footer className='bg-primary'>
+            <footer className='bg-theme'>
                 <div className="container mx-auto px-20 md:px-24 lg:px-32">
                     <div className='pt-64'>
                         <section className=' w-full grid grid-cols-2 lg:grid-cols-4 gap-10'>

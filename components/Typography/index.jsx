@@ -32,17 +32,17 @@ export const H4 = ({ className, children, ...props }) => {
 
 export const H5 = ({ className, children, ...props }) => {
     return (
-        <h4 {...props} className={`${className} text-md`}>
+        <h5 {...props} className={`${className} text-md`}>
             {children}
-        </h4>
+        </h5>
     )
 }
 
 export const H6 = ({ className, children, ...props }) => {
     return (
-        <h5 {...props} className={`${className} text-gray leading-9 text-sm`}>
+        <h6 {...props} className={`${className} text-gray leading-9 text-sm`}>
             {children}
-        </h5>
+        </h6>
     )
 }
 
@@ -64,7 +64,7 @@ export const Caption = ({ className, children, ...props }) => {
 
 export const Button = ({ className, children, ...props }) => {
     return (
-        <button {...props} className={`${className} bg-primary hover:bg-black text-white h-50 transition-all whitespace-nowrap text-xs rounded-full px-36`}>
+        <button {...props} className={`${className} bg-primary hover:opacity-90 font-medium text-black h-50 transition-all whitespace-nowrap text-xs rounded-full px-36`}>
             {children}
         </button>
     )

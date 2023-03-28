@@ -16,8 +16,8 @@ module.exports = {
       },
       colors: {
         gray: '#717171',
-        theme: '#E8F5FB',
-        primary: '#052F74',
+        theme: '#015F3D',
+        primary: '#FEF152',
         secondary: '#252525',
       },
       maxWidth: {
