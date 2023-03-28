@@ -9,6 +9,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+input{
+    border: 1px solid #FFF;
+    transition: all 0.08s ease-out 0s;
+}
+
+input:focus{
+    border-color: rgb(5, 47, 116);
+    box-shadow: rgba(186, 177, 255, 0.3) 0px 0px 0px 2pt;
+}
+
 /* sidebar */
 .sidebar-container {
     background-color: rgba(0, 0, 0, 0.25);
