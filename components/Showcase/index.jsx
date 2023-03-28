@@ -14,7 +14,7 @@ const Index = () => {
                         <input className='w-full h-full rounded-full shadow-light focus:outline-none placeholder:text-[#052F74] pl-24' type="email" placeholder="Email Address" />
                         <Button className='absolute top-3 right-3 h-64'>Get Started</Button>
                     </div>
-                    <Caption className='!text-black !font-light mb-16'>free 7 days trial no credit card required</Caption>
+                    <Caption className='!text-black font-normal mb-16'>free 7 days trial no credit card required</Caption>
                     <div className='w-full relative max-w-full h-full'>
                         <img className="w-full relative max-w-full h-full object-contain z-10" src="/assets/header.png" alt="" />
                         <img className="absolute hidden lg:block top-60 -right-99 object-contain" src="/assets/svg/header-graphic.svg" alt="" />
