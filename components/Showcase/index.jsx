@@ -16,7 +16,7 @@ const Index = () => {
                     </div>
                     <Caption className='!text-black !font-light mb-16'>free 7 days trial no credit card required</Caption>
                     <img className="w-full max-w-full h-full object-contain z-10" src="/assets/header.png" alt="" />
-                    <div className="bg-white w-full h-16 md:h-64 absolute bottom-0">
+                    <div className="bg-white w-full h-36 md:h-54 absolute bottom-0">
                     </div>
                 </section>
             </div>

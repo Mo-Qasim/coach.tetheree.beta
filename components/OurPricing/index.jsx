@@ -38,18 +38,18 @@ const Card = ({ item, active }) => {
                 <Caption className='!text-[#363636] text-center lg:text-left leading-6 mb-18'>A private tutoring session with your dedicated mentor</Caption>
                 <ul className='mb-40 md:mb-72'>
                     {list?.map((item, _index) => (
-                        <li key={_index} className='flex first:border-t border-b border-[#F8F8F8] items-center text-[#363636] font-light text-13 py-13'>
+                        <li key={_index} className='flex first:border-t border-b border-[#F8F8F8] items-center text-[#363636] font-normal text-13 py-13'>
                             <img className='mr-13' src='/assets/svg/tick-green.svg' alt="" />
                             {item}
                         </li>
                     ))}
                     {active && (
                         <>
-                            <li className='flex first:border-t border-b border-[#F8F8F8] items-center text-[#363636] font-light text-13 py-13'>
+                            <li className='flex first:border-t border-b border-[#F8F8F8] items-center text-[#363636] font-normal text-13 py-13'>
                                 <img className='mr-13' src='/assets/svg/tick-green.svg' alt="" />
                                 Lorem ipsum dolor sit
                             </li>
-                            <li className='flex first:border-t border-b border-[#F8F8F8] items-center text-[#363636] font-light text-13 py-13'>
+                            <li className='flex first:border-t border-b border-[#F8F8F8] items-center text-[#363636] font-normal text-13 py-13'>
                                 <img className='mr-13' src='/assets/svg/tick-green.svg' alt="" />
                                 Lorem ipsum dolor sit
                             </li>
