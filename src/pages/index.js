@@ -57,7 +57,7 @@ const Index = () => {
         imgUrl='/assets/automate-tagging.png'
       />
 
-      <OurPricing />
+      {/* <OurPricing /> */}
 
       <Footer />
     </>

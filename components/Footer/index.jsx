@@ -7,13 +7,16 @@ const Index = ({ }) => {
         <>
             <section>
                 <div className="container mx-auto px-20 md:px-24 lg:px-32">
-                    <section className='w-full relative z-10 lg:max-w-[600px] mx-auto mt-99 lg:-mb-162'>
-                        <div>
-                            <H2 className='text-center mb-6'>Get Started</H2>
-                            <H6 className='w-full lg:w-11/12 font-normal text-center mb-32'>Save time and achieve greater results on behalf of you and your athletes</H6>
+                    <section className='w-full flex flex-col lg:flex-row justify-between mx-auto mt-46 lg:-mb-162'>
+                        <div className='w-full lg:pt-20'>
+                            <H2 className='mb-6'>Test free beta</H2>
+                            <H6 className='w-full lg:w-4/5 font-normal mb-32'>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</H6>
+                        </div>
+
+                        <div className='w-full relative z-10'>
                             <div className='relative'>
-                                <img className='hidden md:block absolute -scale-75 -top-18 -right-[88px]' src='/assets/svg/graphic-dots.svg' alt="" />
-                                <img className='hidden md:block absolute -scale-75 translate-y-2/4 bottom-99 lg:bottom-220 -left-120 -z-10' src='/assets/svg/graphic-dots.svg' alt="" />
+                                <img className='hidden lg:block absolute -scale-75 -top-18 -right-[88px]' src='/assets/svg/graphic-dots.svg' alt="" />
+                                <img className='hidden lg:block absolute -scale-75 translate-y-2/4 bottom-99 lg:bottom-220 -left-120 -z-10' src='/assets/svg/graphic-dots.svg' alt="" />
                                 <main className='bg-[#FAFAFA] relative flex flex-col lg:rounded-lg p-26 lg:p-46'>
                                     <Caption className='text-[#343434] mb-28'>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</Caption>
                                     <div className='flex flex-col lg:flex-row justify-between lg:gap-14'>
