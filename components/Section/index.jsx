@@ -12,7 +12,7 @@ export const MultiSection = ({ title, subTitle, btnTitle, list = ['Communicate w
                         <ul>
                             {list?.map((item, _index) => (
                                 <li key={_index} className='flex items-center mb-12'>
-                                    <img className='w-20 h-20 mr-14' src='/assets/tick-icon.svg' alt="" />
+                                    <img className='w-20 h-20 mr-14' src='/assets/svg/tick-icon.svg' alt="" />
                                     <span className='text-gray font-normal leading-34 text-sm md:text-2xs'>{item}</span>
                                 </li>
                             ))}
@@ -21,7 +21,7 @@ export const MultiSection = ({ title, subTitle, btnTitle, list = ['Communicate w
                     <div className={`${orderReverse && 'order-1'} relative w-full h-full`}>
                         <img className='relative z-10 w-full max-w-full' src='/assets/video-assessment.png' alt="" />
                     </div>
-                        <img className={`absolute -scale-75 bottom-0 ${orderReverse ? '-left-46' : '-right-46'}`} src='/assets/svg/graphic-dots.svg' alt="" />
+                        <img className={`absolute hidden lg:block -scale-75 bottom-0 ${orderReverse ? '-left-46' : '-right-46'}`} src='/assets/svg/graphic-dots.svg' alt="" />
                 </section>
             </div>
         </>

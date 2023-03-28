@@ -20,8 +20,8 @@ module.exports = {
         primary: '#052F74',
         secondary: '#252525',
       },
-      height: {
-
+      maxWidth: {
+        220: '220px'
       },
       lineHeight: {
         34: '34px',
@@ -69,10 +69,13 @@ module.exports = {
         80: '80px',
         84: '84px',
         99: '99px',
+        110: '110px',
         120: '120px',
         136: '136px',
         146: '146px',
         162: '162px',
+        180: '180px',
+        220: '220px',
       },
       fontSize: {
         12: '12px',

@@ -11,37 +11,39 @@ const Index = ({ }) => {
                         <div>
                             <H2 className='text-center mb-6'>Get Started</H2>
                             <H6 className='w-full lg:w-11/12 font-normal text-center mb-32'>Save time and achieve greater results on behalf of you and your athletes</H6>
-                            <main className='bg-[#FAFAFA] relative z-10 flex flex-col lg:rounded-lg p-26 lg:p-46'>
-                                {/* <img className='hidden md:block absolute -scale-75 -top-18 -right-76' src='/assets/svg/graphic-dots.svg' alt="" /> */}
-                                {/* <img className='hidden md:block absolute -scale-75 translate-y-2/4 bottom-99 lg:bottom-162 -left-76 -z-10' src='/assets/svg/graphic-dots.svg' alt="" /> */}
-                                <Caption className='text-[#343434] mb-28'>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</Caption>
-                                <div className='flex flex-col lg:flex-row justify-between lg:gap-14'>
-                                    <div className='w-full mb-18'>
-                                        <Input label='First name' placeholder='first name' forId='fistname' />
+                            <div className='relative'>
+                                <img className='hidden md:block absolute -scale-75 -top-18 -right-[88px]' src='/assets/svg/graphic-dots.svg' alt="" />
+                                <img className='hidden md:block absolute -scale-75 translate-y-2/4 bottom-99 lg:bottom-220 -left-120 -z-10' src='/assets/svg/graphic-dots.svg' alt="" />
+                                <main className='bg-[#FAFAFA] relative flex flex-col lg:rounded-lg p-26 lg:p-46'>
+                                    <Caption className='text-[#343434] mb-28'>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</Caption>
+                                    <div className='flex flex-col lg:flex-row justify-between lg:gap-14'>
+                                        <div className='w-full mb-18'>
+                                            <Input label='First name' placeholder='first name' forId='fistname' />
+                                        </div>
+                                        <div className='w-full mb-18'>
+                                            <Input label='Last name' placeholder='last name' forId='lastname' />
+                                        </div>
                                     </div>
-                                    <div className='w-full mb-18'>
-                                        <Input label='Last name' placeholder='last name' forId='lastname' />
-                                    </div>
-                                </div>
 
-                                <div className='w-full mb-18'>
-                                    <Input label='Phone number' placeholder='00 000 000' forId='phone' />
-                                </div>
-
-                                <div className='w-full mb-18'>
-                                    <Input label='Work email' placeholder='Your email address' forId='email' />
-                                </div>
-
-                                <div className='flex flex-col lg:flex-row justify-between lg:gap-14'>
                                     <div className='w-full mb-18'>
-                                        <Input label='Password' placeholder='***********' forId='password' type='password' />
+                                        <Input label='Phone number' placeholder='00 000 000' forId='phone' />
                                     </div>
+
                                     <div className='w-full mb-18'>
-                                        <Input label='Confirm password' placeholder='***********' forId='confirm_password' type='password' />
+                                        <Input label='Work email' placeholder='Your email address' forId='email' />
                                     </div>
-                                </div>
-                                <Button className='self-end !text-16 lg::self-center !rounded lg:!rounded-full mt-12'>Register Now</Button>
-                            </main>
+
+                                    <div className='flex flex-col lg:flex-row justify-between lg:gap-14'>
+                                        <div className='w-full mb-18'>
+                                            <Input label='Password' placeholder='***********' forId='password' type='password' />
+                                        </div>
+                                        <div className='w-full mb-18'>
+                                            <Input label='Confirm password' placeholder='***********' forId='confirm_password' type='password' />
+                                        </div>
+                                    </div>
+                                    <Button className='self-end !text-16 lg::self-center !rounded lg:!rounded-full mt-12'>Register Now</Button>
+                                </main>
+                            </div>
                         </div>
                     </section>
                 </div>

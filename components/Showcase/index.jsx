@@ -15,7 +15,10 @@ const Index = () => {
                         <Button className='absolute top-3 right-3 h-64'>Get Started</Button>
                     </div>
                     <Caption className='!text-black !font-light mb-16'>free 7 days trial no credit card required</Caption>
-                    <img className="w-full max-w-full h-full object-contain z-10" src="/assets/header.png" alt="" />
+                    <div className='w-full relative max-w-full h-full'>
+                        <img className="w-full relative max-w-full h-full object-contain z-10" src="/assets/header.png" alt="" />
+                        <img className="absolute hidden lg:block top-60 -right-99 object-contain" src="/assets/svg/header-graphic.svg" alt="" />
+                    </div>
                     <div className="bg-white w-full h-36 md:h-54 absolute bottom-0">
                     </div>
                 </section>
