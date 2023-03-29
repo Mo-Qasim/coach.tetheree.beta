@@ -1,7 +1,7 @@
 import { H2, H3, H6, Button } from '../Typography'
 
-export const MultiSection = ({ title, subTitle, btnTitle, list = ['Communicate with your coach 1-1', 'We build it with complex problems solutions in mind', 'Communicate with your coach 1-1', 'We build it with complex problems solutions in mind'], orderReverse, imgUrl, containerClassName }) => {
-
+export const MultiSection = ({ title, subTitle, image, list = ['Communicate with your coach 1-1', 'We build it with complex problems solutions in mind', 'Communicate with your coach 1-1', 'We build it with complex problems solutions in mind'], orderReverse, showGraphic, graphicClassName, containerClassName, showGraphicAutomateTagging }) => {
+    console.log(image, 'iamage');
     return (
         <>
             <div className="container mx-auto px-20 md:px-24 lg:px-32">
@@ -18,10 +18,15 @@ export const MultiSection = ({ title, subTitle, btnTitle, list = ['Communicate w
                             ))}
                         </ul>
                     </div>
-                    <div className={`${orderReverse && 'order-1'} relative w-full h-full`}>
-                        <img className='relative z-10 w-full max-w-full' src='/assets/video-assessment.png' alt="" />
+                    <div className={`${orderReverse && 'order-1'} relative flex items-center justify-center w-full h-full`}>
+                        {image}
                     </div>
-                        <img className={`absolute hidden lg:block -scale-75 bottom-0 ${orderReverse ? '-left-46' : '-right-46'}`} src='/assets/svg/graphic-dots.svg' alt="" />
+                    {showGraphic && (
+                        <img className={`absolute hidden lg:block -scale-75 bottom-0 ${graphicClassName} ${orderReverse ? '-left-28' : '-right-28'}`} src='/assets/svg/graphic-dots.svg' alt="" />
+                    )}
+                    {showGraphicAutomateTagging && (
+                        <img className='absolute hidden lg:block rotate-180 -scale-75 bottom-99 -left-0' src='/assets/svg/automate-graphic-dots.svg' alt="" />
+                    )}
                 </section>
             </div>
         </>

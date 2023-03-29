@@ -21,7 +21,8 @@ module.exports = {
         secondary: '#252525',
       },
       maxWidth: {
-        220: '220px'
+        220: '220px',
+        '10/9': '10/9',
       },
       lineHeight: {
         34: '34px',
@@ -76,6 +77,7 @@ module.exports = {
         162: '162px',
         180: '180px',
         220: '220px',
+        '10/9': '10/9',
       },
       fontSize: {
         12: '12px',
