@@ -132,7 +132,7 @@ const Index = ({ }) => {
                                 </div>
                             </div>
                         </section>
-                        <H6 className='text-white font-normal text-center pb-26 lg:pb-46'>© 2023 Coach.</H6>
+                        <Paragraph className='text-white font-normal text-center pb-26 lg:pb-46'>All Rights Reserved @ 2023 | Terms and Conditions</Paragraph>
                     </div>
                 </div>
             </footer>
