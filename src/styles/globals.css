@@ -19,6 +19,10 @@ input:focus{
     box-shadow: rgba(186, 177, 255, 0.3) 0px 0px 0px 2pt;
 }
 
+.h-pattern{
+    height: calc(100% - 54px);
+}
+
 /* sidebar */
 .sidebar-container {
     background-color: rgba(0, 0, 0, 0.25);

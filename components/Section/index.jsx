@@ -13,7 +13,7 @@ export const MultiSection = ({ title, subTitle, image, list = ['Communicate with
                             {list?.map((item, _index) => (
                                 <li key={_index} className='flex items-center mb-12'>
                                     <img className='w-20 h-20 mr-14' src='/assets/svg/tick-icon.svg' alt="" />
-                                    <span className='text-gray font-normal leading-34 text-sm md:text-2xs'>{item}</span>
+                                    <span className='text-gray font-normal leading-34 text-2xs md:text-sm'>{item}</span>
                                 </li>
                             ))}
                         </ul>
