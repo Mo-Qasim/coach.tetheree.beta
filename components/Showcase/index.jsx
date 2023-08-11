@@ -3,7 +3,7 @@ import { H1, H4, H5, Caption, Button } from "../Typography";
 
 const Index = () => {
     return (
-        <header className="bg-[#E7F4FB] relative">
+        <header className="bg-theme relative">
             <div className='relative z-10'>
                 <Navbar />
                 <div className="container max-w-[800px] mx-auto mb-32">
